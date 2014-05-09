@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/theCall"
+        android:textSize="30sp"
+         />
+
+    <ImageButton
+        android:id="@+id/terning1"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="70dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/terning_1"
+        android:contentDescription="@string/TODO" />
+
+    <ImageButton
+        android:id="@+id/terning2"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="150dip"
+        android:layout_alignTop="@+id/terning1"
+        android:background="@drawable/terning_2"
+        android:contentDescription="@string/TODO" />
+
+    <ImageButton
+        android:id="@+id/terning3"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_alignLeft="@+id/terning1"
+        android:layout_below="@+id/terning1"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/terning_3"
+        android:contentDescription="@string/TODO" />
+
+    <ImageButton
+        android:id="@+id/terning4"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_alignRight="@+id/terning2"
+        android:layout_below="@+id/terning2"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/terning_4"
+        android:contentDescription="@string/TODO" />
+
+    <ImageButton
+        android:id="@+id/terning5"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_alignLeft="@+id/terning1"
+        android:layout_below="@+id/terning3"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/terning_5"
+        android:contentDescription="@string/TODO" />
+
+    <ImageButton
+        android:id="@+id/terning6"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_alignRight="@+id/terning2"
+        android:layout_below="@+id/terning4"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/terning_6"
+        android:contentDescription="@string/TODO" />
+    <Button
+        android:text="@string/rafle"
+        android:id="@+id/rafle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/terning5"
+        android:layout_marginTop="20dip"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:text="@string/resetCall"
+        android:id="@+id/resetCall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rafle"
+        android:layout_marginTop="10dip"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>
